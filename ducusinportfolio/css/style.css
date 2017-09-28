@@ -1,0 +1,205 @@
+/*Navigation bar*/
+header {
+  text-align: center;
+  border:
+  top: 0;
+  width: 100%;
+}
+
+header h1 {
+font-family: 'sofia', serif;
+color: pink;
+}
+
+header nav ul, header nav ul a {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+header nav ul li, header nav ul a {
+  float: left;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 10px;
+  font-family: 'fantasy', serif;
+}
+/*background styles*/
+body {
+  font-family: 'neuton',serif;
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/paris.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Welcome styles*/
+div.container {
+  width: 100%;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/*images on welcome*/
+.me {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.images {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between ;
+}
+
+.indexImages {
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 1px;
+  height: 250px;
+  object-fit: cover;
+  flex-basis: 30%;
+  border-radius: 10px
+}
+
+/* footer styles*/
+footer {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: white;
+  flex-basis: 100%;
+}
+footer a{
+  text-decoration: none;
+}
+
+footer i.fa-3x {
+  display: inline;
+}
+
+footer .fa-3x{
+  margin: 2px;
+  color: pink;
+}
+
+/* About me styles*/
+div ol li{
+  list-style: number;
+  border-style: solid 1px;
+}
+
+div ul li {
+  border-style: solid 1px;
+  list-style: circle;
+}
+
+div img {
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.aboutMeImages{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*contact styles*/
+form {
+  color: blue;
+  margin:0 auto;
+  text-align: center;
+  width: 560px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 2px;
+  padding: 20px;
+}
+
+span {
+  font-style:oblique;
+  color: white;
+  font-size: 20px;
+}
+
+label {
+  display:block;
+  letter-spacing: 2px;
+  margin: auto;
+}
+
+input, textarea {
+  letter-spacing: 2px;
+  text-align: start;
+  width: 96%;
+  padding: 2%;
+  border-style: solid;
+  border-color: blue;
+  border-width: 2px;
+}
+
+#contact-submit {
+    width:127px;
+    height:38px;
+    border:none;
+    margin-top:20px
+}
+
+/* RESPONSIVE WHEN HOVERING */
+div img:hover {
+  box-shadow: 2px 2px 2px green;
+}
+
+header nav ul a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/*Media Queries*/
+@media (max-width: 1000px){
+  header nav {
+    background-color: blue;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav ul li, header nav ul a {
+    float: none;
+    text-align: left;
+    display: block;
+  }
+  form {
+    width: 90%;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+  }
+  .container p {
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    clear: left;
+  }
+  .images {
+    margin-left: 5%;
+    display: block;
+  }
+  .aboutMeImages {
+    margin-left: 5%;
+    display: block;
+  }
+}
